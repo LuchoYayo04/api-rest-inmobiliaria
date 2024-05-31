@@ -28,6 +28,11 @@ const apartmentsSchema = new mongoose.Schema({
         type: Number,
         required: true
     },
+    filename: {
+        type: String,
+       // required: true,
+        trim: true
+    }
 },{
     timestamps:true
 })
